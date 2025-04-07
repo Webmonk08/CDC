@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react';
 import { redirect } from 'next/navigation'
 
@@ -46,7 +48,6 @@ export default function SideNav({ activeSection, onNavChange, userProfile }) {
                 className={activeSection === 'organizations-add' ? 'active' : ''}
                 onClick={() => {
                   onNavChange('organizations-add')
-                  redirect("/Organization/OrganizationAdd")
                 }}
               >
                 Add
@@ -55,7 +56,6 @@ export default function SideNav({ activeSection, onNavChange, userProfile }) {
                 className={activeSection === 'organizations-list' ? 'active' : ''}
                 onClick={() =>{
                   onNavChange('organizations-list')
-                  redirect("/Organization/OrganizationList")
                 }}
               >
                 List

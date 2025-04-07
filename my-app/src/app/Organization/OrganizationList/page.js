@@ -70,32 +70,6 @@ export default function OrganizationList() {
 
   return (
     <div className="layout-container">
-      {/* Sidebar */}
-      <div className="sidebar">
-        <div className="profile-container">
-          <div className="profile-avatar">JD</div>
-          <div className="profile-info">
-            <div className="profile-name">Jhon Doe</div>
-            <div className="profile-role">Super Admin</div>
-          </div>
-        </div>
-        
-        <nav className="sidebar-nav">
-          <SidebarItem text="Statistics" />
-          <SidebarItemDropdown text="Organizations" active={true}>
-            <SidebarSubItem text="Add" href="/organizations/add" />
-            <SidebarSubItem text="List" href="/organizations" active={true} />
-          </SidebarItemDropdown>
-          <SidebarItemDropdown text="Admin">
-            <SidebarSubItem text="Add" href="/admin/add" />
-            <SidebarSubItem text="List" href="/admin/list" />
-          </SidebarItemDropdown>
-          <SidebarItem text="Analytics" />
-          <SidebarItem text="Content Management" />
-          <SidebarItem text="System Settings" />
-        </nav>
-      </div>
-      
       {/* Main Content */}
       <div className="main-content">
         <div className="content-container">

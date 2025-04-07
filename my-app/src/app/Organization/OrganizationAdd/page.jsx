@@ -80,31 +80,6 @@ export default function AddOrganization() {
   
     return (
       <div className="layout-container">
-        {/* Sidebar - Same as in OrganizationList */}
-        <div className="sidebar">
-          <div className="profile-container">
-            <div className="profile-avatar">JD</div>
-            <div className="profile-info">
-              <div className="profile-name">Jhon Doe</div>
-              <div className="profile-role">Super Admin</div>
-            </div>
-          </div>
-          
-          <nav className="sidebar-nav">
-            <SidebarItem text="Statistics" />
-            <SidebarItemDropdown text="Organizations" active={true}>
-              <SidebarSubItem text="Add" href="/organizations/add" active={true} />
-              <SidebarSubItem text="List" href="/organizations" />
-            </SidebarItemDropdown>
-            <SidebarItemDropdown text="Admin">
-              <SidebarSubItem text="Add" href="/admin/add" />
-              <SidebarSubItem text="List" href="/admin/list" />
-            </SidebarItemDropdown>
-            <SidebarItem text="Analytics" />
-            <SidebarItem text="Content Management" />
-            <SidebarItem text="System Settings" />
-          </nav>
-        </div>
         
         {/* Main Content */}
         <div className="main-content">
