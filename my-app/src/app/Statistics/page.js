@@ -16,12 +16,12 @@ export default function StatisticsSection() {
     barChartX: 'Day',
     barChartY: 'Engagement Score',
     donut1Data: [
-      { name: 'Python', value: 30, color: '#10b981' },
-      { name: 'JavaScript', value: 25, color: '#f87171' },
-      { name: 'Java', value: 20, color: '#60a5fa' },
-      { name: 'C++', value: 15, color: '#f59e0b' },
-      { name: 'C#', value: 7, color: '#8b5cf6' },
-      { name: 'Ruby', value: 3, color: '#ec4899' }
+      { name: 'Japanese', value: 30, color: '#10b981' },
+      { name: 'Mandrin', value: 25, color: '#f87171' },
+      { name: 'German', value: 20, color: '#60a5fa' },
+      { name: 'French', value: 15, color: '#f59e0b' },
+      { name: 'Spanish', value: 7, color: '#8b5cf6' },
+      { name: 'English', value: 3, color: '#ec4899' }
     ],
     donut2Data: [
       { name: 'Pass', value: 72, color: '#10b981' },

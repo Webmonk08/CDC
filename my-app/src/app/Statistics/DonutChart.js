@@ -110,7 +110,7 @@ export default function DonutChart({
           fontWeight="bold"
           fill="#000"
         >
-          {centerValue || (activeSegment ? `${Math.round(activeSegment.value / totalValue * 100)}%` : '')}
+          {centerValue || (activeSegment ? `${Math.round(activeSegment.value / totalValue * 100)}%` : totalValue)}
         </text>
       </svg>
       
@@ -132,7 +132,7 @@ export default function DonutChart({
           }}
         >
           <div>{activeSegment.name}: {activeSegment.value} students</div>
-          <div>{Math.round(activeSegment.value / totalValue * 100)}%</div>
+          <div>{activeSegment.value? `${Math.round(activeSegment.value / totalValue * 100)}%` : totalValue}</div>
         </div>
       )}
       

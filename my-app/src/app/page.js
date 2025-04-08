@@ -1,22 +1,13 @@
 'use client'
 import Head from 'next/head';
 
-import SideNav from '@/components/SideNav';
-import StatisticsSection from '@/Statistics/page';
-// import OrganizationSection from '@/Organization/OrganizationSection';
-// import AdminSection from '@/components/Admin/AdminSection';
-// import AnalyticsSection from '@/components/Analytics/AnalyticsSection';
+import SideNav from './components/SideNav';
+import StatisticsSection from './Statistics/page';
 import { useState } from 'react';
 
 export default function Dashboard() {
   const [activeSection, setActiveSection] = useState('statistics');
-  const [userProfile, setUserProfile] = useState({
-    name: 'Jhon Doe',
-    role: 'Super Admin',
-    avatar: 'JD'
-  });
 
-  // Handle navigation changes
   const handleNavChange = (section) => {
     setActiveSection(section);
   };
@@ -49,11 +40,7 @@ export default function Dashboard() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <SideNav 
-        activeSection={activeSection} 
-        onNavChange={handleNavChange}
-        userProfile={userProfile}
-      />
+      
       
       <main className="main-content">
         {renderSectionContent()}
@@ -61,14 +48,11 @@ export default function Dashboard() {
 
       <style jsx>{`
         .dashboard-container {
-          display: grid;
-          grid-template-columns: 280px 1fr;
-          height: 100vh;
+          
           background-color: #f5f7fa;
         }
         
         .main-content {
-          padding: 24px;
           overflow-y: auto;
         }
       `}</style>

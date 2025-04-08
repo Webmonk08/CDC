@@ -10,8 +10,8 @@ export default function ClientLayout({ children }) {
   const handleNavChange = (section) => {
     const routes = {
       'statistics': '/Statistics',
-      'organizations-add': '/Organization/OrganizationAdd',
-      'organizations-list': '/Organization/OrganizationList',
+      'organizations-add': '/Organization/Add',
+      'organizations-list': '/Organization/List',
       'admin-add': '/Admin/Add',
       'admin-list': '/Admin/List',
       'analytics': '/Analytics',
@@ -32,7 +32,7 @@ export default function ClientLayout({ children }) {
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh' }}>
-      <div style={{ width: '250px' }}>
+      <div >
         <SideNav
           activeSection={pathname}
           onNavChange={handleNavChange}

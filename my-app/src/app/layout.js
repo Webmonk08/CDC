@@ -1,5 +1,5 @@
+import ClientLayout from "./components/ClientLayout"
 import './globals.css';
-import ClientLayout from '@/components/ClientLayout';
 
 export const metadata = {
   title: 'Dashboard',
